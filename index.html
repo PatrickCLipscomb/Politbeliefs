@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Political Leaning</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="form" action="index.html" method="post" id="choices">
+        <label for="SSN">Please enter your SSN</label>
+        <input id="SSN" type="text">
+        <br>
+        <label for="vote">Do you vote?</label>
+        <select class="form-control" id="vote">
+          <option value=0></option>
+          <option value=1>Yes</option>
+          <option value=-1>No</option>
+          <option value=-1>If I care</option>
+        </select>
+        <label for="bern">Feeling the bern?</label>
+        <select class="form-control" id="bern">
+          <option value=0></option>
+          <option value=-1>Yes</option>
+          <option value=1>No</option>
+          <option value=2>In my pants?</option>
+        </select>
+        <label for="rural">Do you live on a farm?</label>
+        <select class="form-control" id="rural">
+          <option value=0></option>
+          <option value=2>I live on my family's legacy farm.</option>
+          <option value=-1>No, why would I live on a farm?</option>
+          <option value=-2>I don't even know anyone who lives on a farm...</option>
+        </select>
+
+
+        <button type="submit" class="btn">Submit!</button>
+
+      </form>
+      <div class="jumbotron results">
+        <h2 class="liberal">You have fallen on the Liberal side of the wall.</h2>
+        <h2 class="conservative">You have fallen on the Conservative side of the wall.</h2>
+        <h2 class="centrist">You have fallen on directly on top of the wall, and you have broken your hip.</h2>
+      </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2016 P & J, Inc.</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
